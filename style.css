@@ -1,95 +1,233 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header .logo img {
-    height: 50px;
+/* Navbar Styling */
+.navbar {
+    background-color: #000 !important;
+    padding: 15px 0;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.navbar-brand {
+    color: #ff9800 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav ul li {
-    margin-left: 20px;
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ff9800 !important;
 }
 
 /* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
+#heroCarousel .carousel-item {
+    position: relative;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Overlay Effect for Readability */
+#heroCarousel .hero-slide {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ff9800;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e68900;
+}
+
+/* Our Solutions */
+#solutions {
+    background-color: #222; /* Dark background */
+    padding: 60px 0;
     text-align: center;
-    color: #fff;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+#solutions h2 {
+    color: #ff9800; /* Orange heading */
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.cta-button {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+#solutions h4 {
+    color: #ffffff; /* White subheading */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-/* Other Sections */
-section {
-    padding: 50px 20px;
+#solutions p {
+    color: #f0f0f0; /* Light gray text for better contrast */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: auto;
 }
 
-h2 {
+/* Reviews Section */
+/* #reviews { */
+    /* background-color: #333; Dark gray background */
+    /* padding: 60px 0;
     text-align: center;
-    margin-bottom: 20px;
+} */
+/* .py-5 {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/review_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+
+
+#reviews h2 {
+    color: #ff9800; /* Orange title */
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.service-list, .project-gallery, .testimonial-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-item, .project-item, .testimonial-item {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+.review-card {
+    background: #444; /* Darker card background */
+    border-left: 5px solid #ff9800;
     padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; /* White text */
+    transition: transform 0.3s ease-in-out;
+    min-height: max-content;
 }
 
-footer .social-media a {
-    color: #fff;
-    margin: 0 10px;
+.bg-image {
+    background-image: url('images/review_bg.jpg'); background-size: cover;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-card h5 {
+    color: #ffcc66; /* Light orange for names */
+    font-size: 1.3rem;
+}
+
+.review-card p {
+    color: #f0f0f0; /* Light gray text */
+    font-size: 1rem;
+}
+
+/* Star Rating */
+.review-card .text-muted {
+    color: #ffd700 !important; /* Gold stars */
+    font-size: 1.3rem;
+}
+
+
+/* CTA Section */
+#cta {
+    background-color: #333;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#cta .btn {
+    font-size: 20px;
+}
+
+/* Partners Section */
+#partners {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#partners img {
+    max-height: 100px;
+    margin: 15px;
+}
+
+/* Floating Quote Button */
+#quote-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 30px;
     text-decoration: none;
+    transition: background 0.3s;
+}
+
+#quote-btn:hover {
+    background: #e68900;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer h5 {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+footer p, footer a {
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+footer a:hover {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-slide h1 {
+        font-size: 2rem;
+    }
+    .hero-slide p {
+        font-size: 1.1rem;
+    }
+    #partners img {
+        width: 120px;
+        height: 80px;
+    }
 }
