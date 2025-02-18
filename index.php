@@ -4,7 +4,7 @@
 <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-inner">
         <!-- Static First Slide -->
-        <div class="carousel-item active" style="background-image: url('images/hero-main.jpg'); background-size: cover; background-position: center; min-height: 80vh;">
+        <div class="carousel-item active" style="background-image: url('images/construction homebg.webp'); background-size: cover; background-position: center; min-height: 80vh;">
             <div class="hero-slide text-white text-center d-flex align-items-center justify-content-center">
                 <div class="container">
                     <h1 class="fw-bold">Building the Future, Restoring the Past</h1>
@@ -17,10 +17,10 @@
         <!-- Dynamic Slides -->
         <?php
         $slides = [
-            ["Flat Roof Waterproofing", "Protect your flat roof with advanced waterproofing techniques.", "services.php#waterproofing", "Learn More", "images/flat-roof.jpg"],
-            ["Floating Services & Landscaping", "Transform spaces with our high-quality floating services and landscaping solutions.", "services.php#landscaping", "Explore Services", "images/floating.webp"],
-            ["Structural Repairs & Reinforcement", "Strengthen and extend the life of your buildings with expert repair services.", "services.php#repairs", "Get a Consultation", "images/structural-repairs.jpg"],
-            ["Basement Waterproofing", "Prevent water damage and leakage in your basement with our proven solutions.", "services.php#basement", "See Solutions", "images/basement-waterproofing.jpg"]
+            ["Flat Roof Waterproofing", "Protect your flat roof with advanced waterproofing techniques.", "services.php#waterproofing", "Learn More", "images/flatroof.jpg"],
+            ["Floating Services & Landscaping", "Transform spaces with our high-quality floating services and landscaping solutions.", "services.php#landscaping", "Explore Services", "images/floating_machine.jpeg"],
+            ["Structural Repairs & Reinforcement", "Strengthen and extend the life of your buildings with expert repair services.", "services.php#repairs", "Get a Consultation", "images/etienne-girardet-sgYamIzhAhg-unsplash.jpg"],
+            ["Basement Waterproofing", "Prevent water damage and leakage in your basement with our proven solutions.", "services.php#basement", "See Solutions", "images/basement.jpg"]
         ];
 
         foreach ($slides as $slide) {
