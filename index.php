@@ -5,11 +5,11 @@
     <div class="carousel-inner">
         <!-- Static First Slide -->
         <div class="carousel-item active" style="background-image: url('images/construction homebg.webp'); background-size: cover; background-position: center; min-height: 80vh;">
-            <div class="hero-slide text-white text-center d-flex align-items-center justify-content-center">
+            <div class="hero-slide text-white text-center d-flex align-items-center justify-content-center" style="background-color: rgba(255, 165, 0, 0.7);">
                 <div class="container">
                     <h1 class="fw-bold">Building the Future, Restoring the Past</h1>
                     <p class="lead">Innovative construction and waterproofing solutions for residential & commercial projects.</p>
-                    <a href="contact.php" class="btn btn-primary btn-lg mt-3">Get a Free Quote</a>
+                    <a href="contact.php" class="btn btn-warning btn-lg mt-3">Get a Free Quote</a>
                 </div>
             </div>
         </div>
@@ -25,11 +25,11 @@
 
         foreach ($slides as $slide) {
             echo "<div class='carousel-item' style='background-image: url({$slide[4]}); background-size: cover; background-position: center; min-height: 80vh;'>
-                    <div class='hero-slide text-white text-center d-flex align-items-center justify-content-center'>
+                    <div class='hero-slide text-white text-center d-flex align-items-center justify-content-center' style='background-color: rgba(255, 165, 0, 0.7);'>
                         <div class='container'>
                             <h1 class='fw-bold'>{$slide[0]}</h1>
                             <p class='lead'>{$slide[1]}</p>
-                            <a href='{$slide[2]}' class='btn btn-primary btn-lg mt-3'>{$slide[3]}</a>
+                            <a href='{$slide[2]}' class='btn btn-warning btn-lg mt-3'>{$slide[3]}</a>
                         </div>
                     </div>
                 </div>";
@@ -47,20 +47,20 @@
 </section>
 
 <!-- Our Solutions -->
-<section id="solutions" class="py-5 text-center bg-dark">
+<section id="solutions" class="py-5 text-center bg-white">
     <div class="container">
-        <h2 class="text-warning">Our Solutions</h2>
+        <h2 class="text-orange">Our Solutions</h2>
         <div class="row mt-4">
             <div class="col-md-4">
-                <h4 class="text-light">General Construction</h4>
+                <h4 class="text-dark">General Construction</h4>
                 <p class="text-muted">We provide quality construction services for residential and commercial buildings.</p>
             </div>
             <div class="col-md-4">
-                <h4 class="text-light">Waterproofing</h4>
+                <h4 class="text-dark">Waterproofing</h4>
                 <p class="text-muted">Expert waterproofing solutions to protect your structures from moisture damage.</p>
             </div>
             <div class="col-md-4">
-                <h4 class="text-light">Renovations & Remodeling</h4>
+                <h4 class="text-dark">Renovations & Remodeling</h4>
                 <p class="text-muted">Upgrade and modernize your space with our professional renovation services.</p>
             </div>
         </div>
@@ -96,13 +96,12 @@
         </div>
     </div>
 </section>
-
 <!-- Call-to-Action -->
-<section id="cta" class="bg-dark text-white text-center py-5">
+<section id="cta" class="text-white text-center py-5" style="background-color: orange;">
     <div class="container">
         <h2 class="fw-bold">Ready to Start Your Project?</h2>
         <p class="lead">Get in touch with our team for expert construction and waterproofing solutions.</p>
-        <a href="contact.php" class="btn btn-primary btn-lg mt-3">Request a Free Consultation</a>
+        <a href="contact.php" class="btn btn-light btn-lg mt-3">Request a Free Consultation</a>
     </div>
 </section>
 
